@@ -17,9 +17,18 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 h3 {
   font-size: 1.75rem;
 }
+
+ul li {
+  padding-left: 1rem;
+}
+
 /* Header */
 
 header {
@@ -39,10 +48,6 @@ header .logo {
 .options ul {
   display: flex;
   align-items: center;
-}
-
-ul li {
-  padding-left: 1rem;
 }
 
 /* Banner */
@@ -65,7 +70,7 @@ ul li {
   flex-direction: column;
   justify-content: center;
   padding: 2rem 0;
-  width: 30%;
+  width: 40%;
 }
 
 .caption h1, .caption h3 {
@@ -83,4 +88,56 @@ ul li {
 .box p {
   padding: 0.5rem 0;
   color: white;
+}
+
+/* Information */
+
+.information {
+  display: flex;
+}
+
+.information .logo {
+  padding: 2rem 1.5rem;
+  width: 60%;
+}
+
+.information .logo img {
+  width: 100%;
+}
+
+.information h2 {
+  padding-top: 2rem;
+}
+
+.information .logo p {
+  padding-top: 1.5rem;
+}
+
+.information h5 {
+  padding-top: 2rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.details .flex {
+  display: flex;
+  align-items: center;
+}
+
+.details .logo {
+  height: auto;
+  width: 35%;
+  padding-left: 1rem;
+}
+
+.detail {
+  width: 65%;
+}
+
+.detail p {
+  padding: .5rem 0;
 }
