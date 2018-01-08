@@ -29,6 +29,14 @@ ul li {
   padding-left: 1rem;
 }
 
+/* Used in Learning and Thesis sections */
+
+.heading {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
 /* Header */
 
 header {
@@ -141,4 +149,72 @@ header .logo {
 
 .detail p {
   padding: .5rem 0;
+}
+
+/* Learning/Courses */
+
+.learning {
+  display: flex;
+  flex-direction: column;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 4rem;
+}
+
+.course .logo img {
+  height: auto;
+  width: 100%;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 1rem 1rem;
+}
+
+.course-info {
+  padding: 0 0 1.25rem 1rem;
+}
+
+.course-info h3 {
+  padding: 1rem 0 .25rem 0;
+}
+
+.course-info p {
+  padding: .25rem 0;
+}
+
+/* Thesis */
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.movie {
+  width: 60%;
+  padding: 0 1.5rem 1.5rem 0;
+}
+
+.movie video {
+  width: 100%;
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.topics .flex {
+  display: flex;
 }
