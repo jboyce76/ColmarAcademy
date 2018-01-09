@@ -207,14 +207,42 @@ header .logo {
 
 .movie video {
   width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.movie p {
+  padding: .5rem 0;
 }
 
 .topics {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 40%;
 }
 
 .topics .flex {
   display: flex;
+}
+
+.topics .logo {
+  width: 35%;
+  height: auto;
+  padding: 1rem 1rem;
+}
+
+.topics .flex img {
+  width: 100%;
+}
+
+.topics .detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem 3rem 1.5rem;
 }
