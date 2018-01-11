@@ -53,9 +53,28 @@ header .logo {
   height: 2rem;
 }
 
+header .fname {
+  font-weight: bold;
+}
+
 .options ul {
   display: flex;
   align-items: center;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  header span, header nav {
+    display: none;
+  }
+  header .mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+  }
 }
 
 /* Banner */
@@ -97,6 +116,26 @@ header .logo {
 .box p {
   padding: 0.5rem 0;
   color: white;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner .logo {
+    width: 100%;
+    padding: 0 0 2rem 0;
+  }
+  .caption {
+    padding: 0 1rem 2rem 1rem;
+    width: 100%;
+  }
+  .caption h1, .caption h3 {
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+  }
 }
 
 /* Information */
@@ -151,6 +190,41 @@ header .logo {
   padding: .5rem 0;
 }
 
+.logo.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .information .big {
+    display: none;
+  }
+  .details {
+    width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .details .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .details .logo {
+    width: 100%;
+    padding: 0 0;
+  }
+  .logo.small {
+    display: none;
+  }
+  .logo.mobile {
+    display: flex;
+    padding-bottom: 2rem;
+  }
+  .detail {
+    padding-left: 1rem;
+  }
+  .orientation h6, .campus h6 {
+    padding-bottom: 4rem;
+  }
+}
+
 /* Learning/Courses */
 
 .learning {
@@ -187,6 +261,30 @@ header .logo {
 .course-info p {
   padding: .25rem 0;
 }
+
+@media only screen and (max-width: 480px) {
+  .courses {
+    flex-direction: column;
+    padding: 0.5rem 0 1.5rem 0;
+  }
+  .courses .logo {
+    display: none;
+  }
+  .courses p {
+    display: none;
+  }
+  .course {
+    width: 100%;
+    padding: 0;
+  }
+  .course-info {
+    padding: .5rem 1rem;
+  }
+  .course h3 {
+    padding: 1rem 0 1.5rem 1rem;
+  }
+}
+
 
 /* Thesis */
 
@@ -241,8 +339,36 @@ header .logo {
   padding: 1rem 0;
 }
 
+@media only screen and (max-width: 480px) {
+  .content {
+    padding: 0;
+  }
+  .movie {
+    width: 100%;
+    padding: 1rem 0 1.5rem 0;
+  }
+  .movie h3, .movie p{
+    display: none;
+  }
+  .topics {
+    display: none;
+  }
+}
+
+
+/* Footer */
+
 footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem 3rem 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    padding: 1rem 0 1rem 1rem;
+  }
+  .terms {
+    display: none;
+  }
 }
