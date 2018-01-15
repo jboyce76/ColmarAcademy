@@ -81,6 +81,7 @@ header .mobile {
 
 .banner {
   display: flex;
+  background-color: #8D9CD9;
 }
 
 .banner .logo {
@@ -128,7 +129,7 @@ header .mobile {
   }
   .caption {
     padding: 0 1rem 2rem 1rem;
-    width: 100%;
+    width: auto;
   }
   .caption h1, .caption h3 {
     width: 100%;
@@ -194,6 +195,10 @@ header .mobile {
   display: none;
 }
 
+.campus {
+  background-color: #8D9CD9;
+}
+
 @media only screen and (max-width: 480px) {
   .information .big {
     display: none;
@@ -230,6 +235,7 @@ header .mobile {
 .learning {
   display: flex;
   flex-direction: column;
+  background-color: #8D9CD9;
 }
 
 .courses {
@@ -339,6 +345,10 @@ header .mobile {
   padding: 1rem 0;
 }
 
+.nyc {
+  background-color: #8D9CD9;
+}
+
 @media only screen and (max-width: 480px) {
   .content {
     padding: 0;
@@ -362,6 +372,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem 3rem 1.5rem;
+  background-color: #8D9CD9;
 }
 
 @media only screen and (max-width: 480px) {
