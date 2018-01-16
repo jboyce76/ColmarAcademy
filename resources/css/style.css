@@ -97,13 +97,12 @@ header .mobile {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 2rem 10% 2rem 0;
   width: 40%;
 }
 
 .caption h1, .caption h3 {
   padding-bottom: 2rem;
-  width: 80%;
 }
 
 .box {
@@ -111,12 +110,17 @@ header .mobile {
   align-items: center;
   justify-content: center;
   background-color: black;
-  width: 70%;
+  margin-right: 10%;
 }
 
-.box p {
+.box a {
   padding: 0.5rem 0;
   color: white;
+  text-decoration: none;
+}
+
+.box a:hover {
+  color: lightblue;
 }
 
 @media only screen and (max-width: 480px) {
@@ -188,7 +192,16 @@ header .mobile {
 }
 
 .detail p {
-  padding: .5rem 0;
+  padding: .5rem 0;  
+}
+
+.detail a {
+  color: blue;
+  text-decoration: none;
+}
+
+.detail a:hover {
+  color: lightblue;
 }
 
 .logo.mobile {
