@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Allegreya Sans', sans-serif;
   line-height: 1.4;
 }
 
@@ -57,6 +57,18 @@ header .fname {
   font-weight: bold;
 }
 
+header .lname {
+  color: #808080;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00BFFF;
+}
+
 .options ul {
   display: flex;
   align-items: center;
@@ -81,7 +93,8 @@ header .mobile {
 
 .banner {
   display: flex;
-  background-color: #8D9CD9;
+  background-color: #D3D3D3;
+/*  background-color: #FFBA81;  */
 }
 
 .banner .logo {
@@ -116,11 +129,10 @@ header .mobile {
 .box a {
   padding: 0.5rem 0;
   color: white;
-  text-decoration: none;
 }
 
 .box a:hover {
-  color: lightblue;
+    color: #00BFFF;
 }
 
 @media only screen and (max-width: 480px) {
@@ -173,6 +185,8 @@ header .mobile {
 .details {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0 2rem 0;
   width: 40%;
 }
 
@@ -184,7 +198,7 @@ header .mobile {
 .details .logo {
   height: auto;
   width: 35%;
-  padding-left: 1rem;
+  padding: 1rem;
 }
 
 .detail {
@@ -192,24 +206,23 @@ header .mobile {
 }
 
 .detail p {
-  padding: .5rem 0;  
+  padding: .5rem 0;
 }
 
 .detail a {
   color: blue;
-  text-decoration: none;
 }
 
 .detail a:hover {
-  color: lightblue;
+  color: #00BFFF;
 }
 
 .logo.mobile {
   display: none;
 }
 
-.campus {
-  background-color: #8D9CD9;
+.guest {
+  background-color: #D3D3D3;
 }
 
 @media only screen and (max-width: 480px) {
@@ -227,6 +240,9 @@ header .mobile {
   .details .logo {
     width: 100%;
     padding: 0 0;
+  }
+  .campus.flex {
+    padding: 4rem 0;
   }
   .logo.small {
     display: none;
@@ -248,7 +264,7 @@ header .mobile {
 .learning {
   display: flex;
   flex-direction: column;
-  background-color: #8D9CD9;
+  background-color: #D3D3D3;
 }
 
 .courses {
@@ -265,12 +281,13 @@ header .mobile {
 .course {
   display: flex;
   flex-direction: column;
+  background-color: white;
   width: 30%;
-  padding: 1rem 1rem;
+  margin: 1rem 1rem;
 }
 
 .course-info {
-  padding: 0 0 1.25rem 1rem;
+  padding: 0 1rem 1.25rem 1rem;
 }
 
 .course-info h3 {
@@ -282,6 +299,9 @@ header .mobile {
 }
 
 @media only screen and (max-width: 480px) {
+  .learning {
+    background-color: white;
+  }
   .courses {
     flex-direction: column;
     padding: 0.5rem 0 1.5rem 0;
@@ -293,11 +313,13 @@ header .mobile {
     display: none;
   }
   .course {
-    width: 100%;
     padding: 0;
+    width: auto;
+    margin: 0.5rem 1rem;
   }
   .course-info {
     padding: .5rem 1rem;
+    background-color: #D3D3D3;
   }
   .course h3 {
     padding: 1rem 0 1.5rem 1rem;
@@ -358,10 +380,6 @@ header .mobile {
   padding: 1rem 0;
 }
 
-.nyc {
-  background-color: #8D9CD9;
-}
-
 @media only screen and (max-width: 480px) {
   .content {
     padding: 0;
@@ -385,7 +403,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem 3rem 1.5rem;
-  background-color: #8D9CD9;
+  background-color: #D3D3D3;
 }
 
 @media only screen and (max-width: 480px) {
