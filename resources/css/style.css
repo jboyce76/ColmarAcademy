@@ -78,7 +78,7 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 620px) {
   header span, header nav {
     display: none;
   }
@@ -104,6 +104,7 @@ header .mobile {
 
 .banner img {
   width: 100%;
+  height: auto;
 }
 
 .caption {
@@ -135,7 +136,7 @@ header .mobile {
     color: #00BFFF;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 620px) {
   .banner {
     flex-direction: column;
   }
@@ -168,6 +169,7 @@ header .mobile {
 
 .information .logo img {
   width: 100%;
+  height: auto;
 }
 
 .information h2 {
@@ -188,6 +190,7 @@ header .mobile {
   justify-content: space-between;
   padding: 1rem 0 2rem 0;
   width: 40%;
+  border-left: 1px solid gray;
 }
 
 .details .flex {
@@ -202,6 +205,7 @@ header .mobile {
 }
 
 .detail {
+  padding: 1rem 0.5rem 1rem 0;
   width: 65%;
 }
 
@@ -221,17 +225,22 @@ header .mobile {
   display: none;
 }
 
+.campus {
+  border-top: 1px solid gray;
+}
+
 .guest {
   background-color: #D3D3D3;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 620px) {
   .information .big {
     display: none;
   }
   .details {
     width: 100%;
     padding: 1rem 1rem 2rem 1rem;
+    border-left: none;
   }
   .details .flex {
     flex-direction: column;
@@ -240,6 +249,9 @@ header .mobile {
   .details .logo {
     width: 100%;
     padding: 0 0;
+  }
+  .campus {
+    border-top: none;
   }
   .campus.flex {
     padding: 4rem 0;
@@ -282,7 +294,7 @@ header .mobile {
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 30%;
+  max-width: 30%;
   margin: 1rem 1rem;
 }
 
@@ -298,7 +310,16 @@ header .mobile {
   padding: .25rem 0;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1105px) {
+  .courses {
+    justify-content: center;
+  }
+  .course {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
   .learning {
     background-color: white;
   }
@@ -315,6 +336,7 @@ header .mobile {
   .course {
     padding: 0;
     width: auto;
+    max-width: none;
     margin: 0.5rem 1rem;
   }
   .course-info {
@@ -377,10 +399,14 @@ header .mobile {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 1rem 0.5rem 1rem 0;
 }
 
-@media only screen and (max-width: 480px) {
+.fisma {
+  background-color: #D3D3D3;
+}
+
+@media only screen and (max-width: 620px) {
   .content {
     padding: 0;
   }
@@ -406,7 +432,7 @@ footer {
   background-color: #D3D3D3;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 620px) {
   footer {
     padding: 1rem 0 1rem 1rem;
   }
